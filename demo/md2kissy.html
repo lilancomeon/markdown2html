@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>测试md</title>
+	<script src="http://g.tbcdn.cn/kissy/k/1.4.1/seed-min.js"></script>
+    <script src="http://g.tbcdn.cn/mui/seed/1.3.1/seed.js"></script>
+</head>
+<body>
+	<script>
+	KISSY.config({
+        packages: [{
+                name: "src",
+                path: "../", 
+                charset: "utf-8"
+            }],
+            "debug":true,
+            "combine":false
+    });
+    KISSY.use('src/useMarkedKissy',function(S,useMarkedKissy){
+    	useMarkedKissy.init("a");
+    });
+	</script>
+</body>
+</html>

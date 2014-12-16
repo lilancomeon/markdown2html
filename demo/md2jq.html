@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset='UTF-8'>
+		<title>md2jq</title>
+		<script type="text/javascript" src="../src/lib/sea.js"></script>
+	</head>
+	<body>
+		<script>
+			seajs.config({
+				paths:{
+					'dirname':"../src/lib"
+				},
+				alias:{
+					"jquery":"jquery-1.11.1.min",
+					"markedJq":"markedJq"
+				}
+			});
+			seajs.use(['jquery','markedJq'],function($,markedJq){
+				$("body").html(markedJq('I am using __markdown__'));
+			});
+		</script>
+	</body>
+</html>
